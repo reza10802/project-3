@@ -25,29 +25,11 @@
         <div id="pageContent">
             <h1>Main Content</h1>
             <p>Here is the main content of the page.</p>
-            <!-- Add your additional content here -->
+
         </div>
     </div>
 
     <script>
-        document.getElementById('printBtn').addEventListener('click', function() {
-            var content = document.getElementById('pageContent').innerHTML;
-            var printFrame = document.createElement('iframe');
-            printFrame.style.position = 'absolute';
-            printFrame.style.top = '-10000px';
-            document.body.appendChild(printFrame);
-            var frameDoc = printFrame.contentWindow.document;
-            frameDoc.open();
-            frameDoc.write('<html><head><title>Print Content</title>');
-            frameDoc.write('<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">');
-            frameDoc.write('</head><body>');
-            frameDoc.write(content);
-            frameDoc.write('</body></html>');
-            frameDoc.close();
-            printFrame.contentWindow.focus();
-            printFrame.contentWindow.print();
-            document.body.removeChild(printFrame);
-        });
     </script>
 </body>
 </html>
