@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Specific Content</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @media print {
+            /* Add any print-specific styles here */
+            body {
+                font-size: 12pt;
+            }
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container mx-auto p-4">
+        <button id="printBtn" class="bg-blue-500 text-white px-4 py-2 rounded no-print">پرینت</button>
+        
+        <!-- Your Page Content -->
+        <div id="pageContent">
+            <h1>Main Content</h1>
+            <p>Here is the main content of the page.</p>
+            <!-- Add your additional content here -->
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('printBtn').addEventListener('click', function() {
+            var content = document.getElementById('pageContent').innerHTML;
+            var printFrame = document.createElement('iframe');
+            printFrame.style.position = 'absolute';
+            printFrame.style.top = '-10000px';
+            document.body.appendChild(printFrame);
+            var frameDoc = printFrame.contentWindow.document;
+            frameDoc.open();
+            frameDoc.write('<html><head><title>Print Content</title>');
+            frameDoc.write('<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">');
+            frameDoc.write('</head><body>');
+            frameDoc.write(content);
+            frameDoc.write('</body></html>');
+            frameDoc.close();
+            printFrame.contentWindow.focus();
+            printFrame.contentWindow.print();
+            document.body.removeChild(printFrame);
+        });
+    </script>
+</body>
+</html>

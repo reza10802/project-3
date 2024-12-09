@@ -1,0 +1,543 @@
+@font-face {
+    font-family: estedad;
+    src: url(Estedad-v5.0-Fontjo.com/Estedad[wght\,kshd].ttf);
+    src: url(Estedad-v5.0-Fontjo.com/Estedad[wght\,kshd].woff2);
+}
+*{
+    font-family: estedad ;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: #EEEEEE !important;
+}
+
+#container{
+    display:flex;
+    gap: .2rem;
+}
+#userMenu{
+    width: 100% ;
+    padding-right: 10px;
+}
+/* sidebar */
+#sideBar{
+    display:none;
+    background-image:linear-gradient(#30C2C2,#077171);
+    border-radius:2rem 0 0 2rem;
+    height:100vh;
+    white-space:nowrap;
+    position: relative;
+    transition: all .3s ease-in-out;
+    
+}
+
+#userMenu{
+    padding-left:10px;
+}
+
+    #sideBar .buttons{
+        margin-top:4rem;
+        padding-left:10px;
+    }
+
+    #sideBar button{
+        display: block;
+        margin-top:2rem;
+        border:none;
+        background-color:transparent;
+        color:white;
+    }
+
+
+/* navbar */
+#navbar{
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-top:15px;
+}
+
+.navbar-icons{
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar-icons button{
+    border: none;
+    background-color: white;
+    padding: .3rem 1rem;
+    border-radius: .4rem;
+}
+
+.userProf{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-hamburger button{
+    border: none;
+    background-color: white;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+
+/* main page title-sector 1 */
+
+    #Main{
+        margin-top: 1rem !important;
+        margin: 0 auto;
+    }
+
+    #title-sector1 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .title-sector1{
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        width:25% ;
+    }
+
+    .title-sector1 div {
+        gap: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title-sector1 .create-contact{
+        width:60%;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .title-sector1 .return{
+        width: 40%;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .return , .create-contact{
+        height: 40px;
+        text-align: center;
+        border-radius: 1.4rem;
+        color: white;
+    }
+
+
+
+    #title-sector1 .create-contact{
+        background-color: #2FC1C1;
+        text-align: center;
+    }
+
+    #title-sector1 .return{
+        color: white;
+        background-color: #454D5C;
+    }
+
+    /* table */
+
+    #table{
+        background-color: #FFFFFF;
+        border-radius: 1rem;
+        padding: .7rem 0;
+        margin-top: 10px;
+    }
+    .entekhab-responsive-mobile{
+        display: none;
+    }
+    /* title sector 2  */
+
+    #title-sector2 {
+        display: flex;
+        justify-content:space-between ;
+        padding: 0 10px;
+        align-items: center;
+    }
+
+    .title-sector2-rightside{
+        background-color: #84CC16;
+        height: fit-content;
+        padding:.5rem;
+        border-radius: .4rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    .title-sector2-leftside{
+        display: flex;
+        height: fit-content;
+        padding: 1rem 0;
+        gap: .5rem;
+        border-radius: .4rem;
+    }
+
+
+
+    .search{
+        background-color: #84CC16;
+        color: white;
+        border-radius: .5rem;
+    }
+
+    .emzaOp1{
+        background-color:#22C55E4D;
+        padding:.4rem ;
+        border-radius: .4rem;
+    }
+
+    .printGorohi{
+        background-color: #94A3B84D;
+        padding:.4rem;
+        border-radius: .4rem;
+    }
+
+
+    /* title-sector3 */
+    #title-sector3{
+        width: 99%;
+        margin: 0 auto;
+        padding: .7rem;
+        border-radius: .4rem;
+        display:flex;
+        gap: .5rem;
+        color: white;
+        background-color: #41D1D1;
+        font-weight: bold;
+    }
+
+    #title-sector3 .radif{
+        width:9.7%;
+        display: flex;
+        gap: 4px;
+    }
+    #title-sector3 .shGharar{
+        width:12.7%;
+    }
+    #title-sector3 .personel{
+        width:13.7%;
+    }
+    #title-sector3 .shPersonel{
+        width:15.7%;
+    }
+    #title-sector3 .aGharar{
+        width:16.7%;
+    }
+    #title-sector3 .pGharar{
+        width:16.7%;
+    }
+    #title-sector3 .emzaOp{
+        width:10.7%;
+    }
+    #title-sector3 .op{
+        width:10.7%;
+        text-align:center;
+    }
+
+
+
+
+
+
+    /* Datas */
+
+    #tableData .Data{
+        background-color: #ECFFFF;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: .7rem;
+        margin: 10px 10px;
+        border-radius: .4rem;
+    }
+    
+    .radif{
+        width:9.7%;
+    }
+    .shGharardad{
+        width:14.4%;
+    }
+    .personel{
+        width:14.2%;
+    }
+    .shPersonel{
+        width:13.7%;
+    }
+    .aGharardad{
+        width:16.7%;
+    }
+    .pGharardad{
+        width:16.7%;
+    }
+    .dEmza{
+        width:10%;
+    }
+    
+    .actions{
+        width: 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:.1rem;
+    }
+    
+/* click class */
+    .active{
+        display: block !important;
+        animation: sideTransition 200ms ease;
+    }
+    .close{
+        display:none;
+        animation: closeTransition 200ms ease;
+    }
+    
+    
+    @keyframes sideTransition {
+        from{
+            right:-170px;
+        }
+        to{
+            right: 0px;
+        }
+    }
+    @keyframes closeTransition {
+        from{
+            right: 0px;
+        }
+        to{
+            right:-170px;
+        }
+    }
+
+/* responsive */
+
+@media (max-width:769px){
+    #title-sector3 .shGharar {
+        display: none !important;
+    }
+
+    #title-sector3 .pGharar{
+        display: none !important;
+    }
+
+    #title-sector3 .radif{
+        width:15%;
+    }
+    #title-sector3 .shPersonel{
+        width:23%; 
+    }
+    #title-sector3 .personel{
+        width:20%;
+    }
+    #title-sector3 .aGharar{
+        width:20%;
+    }
+    #title-sector3 .emzaOp{
+        width:16%;
+    }
+    #title-sector3 .op{
+        width:15%;
+    }
+
+
+
+    .Data .shGharardad {
+        display: none ;
+    }
+
+    .Data .pGharardad{
+        display: none ;
+    }
+
+}
+
+
+
+@media(max-width:576px){
+    *{
+        font-size:.9rem;
+    }
+    #search{
+        display: none;
+    }
+    table{
+        width: 105% !important;
+    }
+    #navbar{
+        display:none;
+    }
+    #title-sector1 .create-contact{
+        display:none;
+        width:0%;
+    }
+    #title-sector1 .return{
+        display:block;
+        width:100%;
+        height:fit-content;
+        padding:.5rem
+    }
+    .entekhab-responsive-mobile{
+        display: block !important;
+    }
+
+    #title-sector2{
+        display:block;
+        gap: 0 !important;
+    }
+    .title-sector2-rightside{
+        display:block ;
+        width: 100% !important;
+        
+    }
+
+    .entekhab-responsive-mobile{
+        background-color:#3AD1D1;
+        padding:.4rem;
+        border-radius: .4rem;
+        color: white;
+    }
+
+    #title-sector2 .emzaOp1{
+        display: none;
+    }
+    .title-sector2-leftside{
+        justify-content: space-between;
+    }
+
+    .Data{
+        border: 2px dashed #B5F1F1;
+    }
+
+
+
+    #title-sector3{
+        display:none;
+    }
+
+    .Data .dEmza{
+        display:none;
+    }
+
+    .Data .shPersonel{
+        display: none;
+    }
+    
+    .Data .pGharardad {
+        display: block;
+    }
+
+    .response-remove{
+        display: none;
+        
+    }
+
+
+    .radif{
+        display: flex;
+        justify-content: space-between;
+        width:10.7%;
+        padding:.2rem .6rem;
+        background-color: #57E3E340;  
+        border-radius: .4rem;
+    }
+
+    .personel{
+        width:20.2%;
+    }
+    .aGharardad{
+        width:16.7%;
+    }
+    .pGharardad{
+        width:16.7%;
+    }
+
+
+    .title-sector2-rightside{
+        text-align: center;
+    }
+    .title-sector2-leftside{
+        padding: .3rem 0 !important;
+    }
+    #tableData .Data:first-child{
+        margin:5px 10px 10px 10px;
+    }
+
+
+
+    .Data .actions{
+        justify-content: end;
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+}
+/* bug */
+@media (max-width:767px){
+    .bug{
+        display: none !important;
+    }
+    .Data:first-child .aGharardad div{
+        display: none !important;
+    }
+}
+
+
+/* print table Data */
+.estesna td , .estesna th{
+    border-bottom: none !important;
+    border-left:1px solid !important ;
+}
+
+
+/* print essentials */
+.modal .modal-dialog .modal-content{
+    background-color: white !important;
+}
+
+
+@page{
+    size: A3;
+    margin: 0mm;
+    page-break-after: auto;
+}
+
+@media print {
+    #print{
+        max-width: 100%;
+        /* width: 22.4cm; */
+    }
+
+    *{
+        font-size: 12px !important;
+    }
+    body{
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+        visibility: hidden;
+        page-break-after: auto;
+    }
+
+    html ,body {
+      margin: 0 !important;
+      padding: 0 !important;
+      color: #000;
+      background-color: #fff;
+    }
+
+    #printSection{
+        /* height:28cm;
+        width: 21cm; */
+        width: 100% !important;
+        visibility: visible !important;
+        page-break-after: auto;
+    }
+
+    #footer-button {
+        visibility: hidden;
+    }
+  }
