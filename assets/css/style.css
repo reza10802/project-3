@@ -1,7 +1,7 @@
 @font-face {
     font-family: estedad;
-    src: url(Estedad-v5.0-Fontjo.com/Estedad[wght\,kshd].ttf);
-    src: url(Estedad-v5.0-Fontjo.com/Estedad[wght\,kshd].woff2);
+    src: url(fonts/Estedad-v5.0-Fontjo.com/Estedad[wght\,kshd].ttf);
+    src: url(fonts/Estedad-v5.0-Fontjo.com/Estedad[wght\,kshd].woff2);
 }
 *{
     font-family: estedad ;
